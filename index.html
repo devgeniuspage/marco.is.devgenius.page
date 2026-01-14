@@ -1,12 +1,142 @@
 <!DOCTYPE html>
-
 <html lang="ko">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간여행하는 개발자 - 포트폴리오</title>
+    <meta name="description" content="시간여행하는 개발자의 개인 브랜딩 포트폴리오 사이트">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-marco.is.devgenius.page
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <h2>시간여행하는 개발자</h2>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <a href="#time-travel" class="nav-link">🕰 시간여행</a>
+            <a href="#portfolio" class="nav-link">💻 개발 포트폴리오</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content" data-aos="fade-up">
+        <h1>안녕하세요, 시간여행하는 개발자입니다</h1>
+        <p>과거의 경험과 현재의 기술, 그리고 미래의 비전을 연결하는 개발자</p>
+        <div class="hero-buttons">
+            <a href="#time-travel" class="btn btn-primary">시간여행 시작하기</a>
+            <a href="#portfolio" class="btn btn-secondary">포트폴리오 보기</a>
+        </div>
+    </div>
+</section>
+
+<!-- Time Travel Section -->
+<section id="time-travel" class="time-travel-section">
+    <div class="container">
+        <h2 data-aos="fade-up">🕰 시간여행</h2>
+        <p data-aos="fade-up" data-aos-delay="100">지도를 통해 저의 여정을 따라가보세요</p>
+        <div id="map" data-aos="fade-up" data-aos-delay="200"></div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section">
+    <div class="container">
+        <h2 data-aos="fade-up">💻 개발 포트폴리오</h2>
+        <p data-aos="fade-up" data-aos-delay="100">최신순으로 정리된 저의 커리어 타임라인입니다</p>
+
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-period">2025.05 ~ 현재</div>
+                    <h3>단비아이엔씨</h3>
+                    <p class="timeline-role">시스템 개발</p>
+                    <p class="timeline-description">최신 기술 스택을 활용한 시스템 개발 및 유지보수를 담당하고 있습니다.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left" data-aos-delay="300">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-period">2025.01 ~ 2025.05</div>
+                    <h3>HKnets</h3>
+                    <p class="timeline-role">시스템 유지보수</p>
+                    <p class="timeline-description">기존 시스템의 안정성 확보 및 성능 최적화 업무를 수행했습니다.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-period">2019.03 ~ 2022.06</div>
+                    <h3>군대</h3>
+                    <p class="timeline-role">정보과장</p>
+                    <p class="timeline-description">정보 시스템 관리 및 운영을 통해 체계적인 업무 처리 능력을 기를 수 있었습니다.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left" data-aos-delay="500">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-period">2015.03 ~ 2019.02</div>
+                    <h3>한국체육대학교</h3>
+                    <p class="timeline-role">대학생</p>
+                    <p class="timeline-description">체육학을 전공하며 다양한 경험과 도전 정신을 기를 수 있었습니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>시간여행하는 개발자</h3>
+                <p>과거, 현재, 미래를 연결하는 개발자</p>
+            </div>
+            <div class="footer-contact">
+                <p>📧 contact@timetravel-dev.com</p>
+                <p>🔗 <a href="https://github.com/timetravel-dev" target="_blank">GitHub</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 시간여행하는 개발자. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal for Map Markers -->
+<div id="marker-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
