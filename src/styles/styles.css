@@ -498,3 +498,41 @@ section p {
 html {
     scroll-behavior: smooth;
 }
+
+.dropdown {
+    position: relative;
+}
+
+/* 기본 상태: 메뉴 숨김 */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #111;
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 160px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+/* 마우스 올리면 보이게 */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* 메뉴 아이템 스타일 */
+.dropdown-item {
+    width: 100%;
+    padding: 10px 16px;
+    background: none;
+    border: none;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #222;
+}

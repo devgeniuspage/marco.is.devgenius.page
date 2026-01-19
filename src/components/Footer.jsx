@@ -10,8 +10,8 @@ function Footer() {
                         <p>과거, 현재, 미래를 연결하는 개발자</p>
                     </div>
                     <div className="footer-contact">
-                        <p>📧 contact@timetravel-dev.com</p>
-                        <p>🔗 <a href="https://github.com/timetravel-dev" target="_blank">GitHub</a></p>
+                        <p>📧 marco@danbeeinc.com</p>
+                        <p>🔗 <a href="https://github.com/KwonSeongHyeok" target="_blank">GitHub</a></p>
                     </div>
                 </div>
                 <div className="footer-bottom">
