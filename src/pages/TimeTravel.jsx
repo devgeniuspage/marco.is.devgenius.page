@@ -1,7 +1,19 @@
 import { MapContainer, TileLayer, Marker, Polyline, Popup } from 'react-leaflet';
 import { mapData } from '../data/mapData.js';
 import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
 import '../styles/TimeTravel.css';
+
+const DefaultIcon = L.icon({
+    iconUrl: '/marker-icon-2x.png',
+    shadowUrl: '/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
 
 export default function TimeTravel() {
     const polylineCoords = mapData.map(loc => [loc.lat, loc.lng]);
