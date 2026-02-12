@@ -19,10 +19,12 @@
     align-items: center;
 }
 
-.nav-logo h2 {
+.nav-logo h2 a {
     color: #60e0e0;
     font-weight: 700;
     font-size: 1.5rem;
+    text-decoration: none;
+    cursor: default;
 }
 
 .nav-menu {
@@ -37,8 +39,7 @@
     transition: color 0.3s ease;
     padding: 0.5rem 1rem;
     border: none;
-    background: none
-;
+    background: none;
 }
 
 .nav-link:hover {
