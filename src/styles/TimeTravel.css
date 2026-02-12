@@ -1,0 +1,21 @@
+.time-travel-section {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    color: white;
+    text-align: center;
+}
+
+#map {
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.leaflet-popup-content button:hover {
+    background-color: #4dd0d0 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(96, 224, 224, 0.4);
+}

@@ -1,6 +1,7 @@
 import { MapContainer, TileLayer, Marker, Polyline, Popup } from 'react-leaflet';
 import { mapData } from '../data/mapData.js';
 import 'leaflet/dist/leaflet.css';
+import '../styles/TimeTravel.css';
 
 export default function TimeTravel() {
     const polylineCoords = mapData.map(loc => [loc.lat, loc.lng]);

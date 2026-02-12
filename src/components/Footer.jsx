@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Footer.css';
 
 function Footer() {
     return (
@@ -15,7 +16,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    <p>&copy; 2025 시간여행하는 개발자. All rights reserved.</p>
+                    <p>&copy; 2026 시간여행하는 개발자. All rights reserved.</p>
                 </div>
             </div>
         </footer>
