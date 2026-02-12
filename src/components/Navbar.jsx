@@ -29,6 +29,7 @@ export default function Navbar() {
                 <div className="nav-menu">
                     <NavLink to="/timeTravel"><button className="nav-link">🕰 시간여행</button></NavLink>
                     <NavLink to="/portfolio"><button className="nav-link">💻 개발 포트폴리오</button></NavLink>
+                    <NavLink to="/fortune"><button className="nav-link">🔮 오늘의 운세</button></NavLink>
                     <NavLink to="/game">
                         <div className="nav-item dropdown"
                              onMouseEnter={() => setGameOpen(true)}

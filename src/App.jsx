@@ -3,6 +3,8 @@ import Navbar from './components/Navbar.jsx';
 import Hero from './pages/Hero.jsx';
 import TimeTravel from './pages/TimeTravel.jsx';
 import Portfolio from './pages/Portfolio.jsx';
+import Fortune from "./pages/Fortune.jsx";
+import Games from './pages/Games.jsx';
 import Footer from './components/Footer.jsx';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -21,7 +23,8 @@ function App() {
                     <Route path="/" element={<Hero />} />
                     <Route path="/timeTravel" element={<TimeTravel />} />
                     <Route path="/portfolio" element={<Portfolio />} />
-                    {/*<Route path="/game" element={<Game />} />*/}
+                    <Route path="/fortune" element={<Fortune />} /> {/* 새 페이지 */}
+                    <Route path="/game" element={<Games />} />
                     {/*<Route path="/game/:gameId" element={<Game />} />*/}
                 </Routes>
             <Footer />

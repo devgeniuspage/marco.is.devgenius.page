@@ -1,0 +1,71 @@
+.fortune-section {
+    height: 100vh;
+    background-color: #e0e4ea;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fortune-text {
+    margin-top: 2rem;       /* 제목과 설명 위치 */
+}
+
+.fortune-button-wrapper {
+    display: flex;
+    justify-content: center; /* 버튼 가로 중앙 */
+    align-items: center;
+    margin-top: 10vh;
+    flex: 1;                /* 남은 공간 차지 */
+}
+
+.fortune-button-wrapper button {
+    padding: 0.8rem 2.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #cfcfff; /* 은은한 연보라/하늘색 글자 */
+    background: linear-gradient(145deg, #1a1a5e, #7a66ff);
+    border: 2px solid #4b3f7f; /* 테두리로 별빛 느낌 */
+    border-radius: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-size: 200% 200%; /* 그라데이션 움직임 가능 */
+}
+
+.fortune-button-wrapper button:hover {
+    transform: scale(1.06);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    background-position: right center; /* 살짝 그라데이션 이동 */
+    filter: brightness(1.15);
+}
+
+.fortune-button-wrapper button:active {
+    transform: scale(0.97);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.5);
+}
+
+.fortune-loading {
+    margin-top: 2rem; /* 버튼에서 아래로 공간 확보 */
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.fortune-result-box {
+    background: #4A40AF;
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    margin-top: 1.5rem;
+    color: #cfcfff; /* 글자 색: 연보라/하늘빛 */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto; /* 가운데 정렬 */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.fortune-result-box p {
+    margin: 0.5rem 0;
+    color: #cfcfff
+}
